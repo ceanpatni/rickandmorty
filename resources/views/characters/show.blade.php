@@ -25,8 +25,8 @@
         <p><strong>Especie:</strong> {{ $character['species'] }}</p>
         <p><strong>Tipo:</strong> {{ $character['type'] ?? 'N/A' }}</p>
         <p><strong>Género:</strong> {{ $character['gender'] }}</p>
-        <p><strong>Origen:</strong> {{ $character['origin']['name'] }}</p>
-        <p><strong>Ubicación:</strong> {{ $character['location']['name'] }}</p>
+        <p><strong>Origen:</strong> {{ $character['origin_name'] }}</p>
+        <p><strong>Ubicación:</strong> {{ $character['origin_url'] }}</p>
         <p><strong>Imagen:</strong></p>
         <img src="{{ $character['image'] }}" alt="{{ $character['name'] }}">
     </div>
