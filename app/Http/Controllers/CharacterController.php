@@ -43,7 +43,7 @@ class CharacterController extends Controller
     }
     public function store()
     {
-        
+        try {
             $response = Http::get('https://rickandmortyapi.com/api/character');
     
             if ($response->successful()) {
@@ -67,7 +67,10 @@ class CharacterController extends Controller
             } else {
                 return redirect()->route('characters.index')->with('error', 'No se pudo obtener la información de los personajes.');
             }
-      
+        } catch (\Exception $e) {
+            // Manejar excepciones generales
+            return redirect()->route('characters.index')->with('error', 'Ocurrió un error al guardar los personajes.');
+        }
     }
 
     public function edit($id)
