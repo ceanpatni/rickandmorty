@@ -1,3 +1,5 @@
+comparto la url del repositorio https://github.com/ceanpatni/rickandmorty
+para bajar los cambios al local
 1) git clone --single-branch -b DevelopAndres https://github.com/ceanpatni/rickandmorty.git
 
 --Lo siguiente es si se modifica el codigo lo que hay que ejecutar es solo el primer comando 1)
