@@ -43,6 +43,8 @@
                     <td>{{ $character['species'] }}</td>
                     <td>
                         <a href="{{ route('characters.show', $character['id']) }}" class="btn btn-primary btn-sm">Detalles</a>
+                  
+                    <a href="{{ route('characters.edit', $character['id']) }}" class="btn btn-primary btn-sm">Edit</a>
                     </td>
                 </tr>
             @endforeach
