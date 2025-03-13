@@ -1,1 +1,7 @@
-https://github.com/ceanpatni
+1) git clone --single-branch -b DevelopAndres https://github.com/ceanpatni/rickandmorty.git
+
+--Lo siguiente es si se modifica el codigo lo que hay que ejecutar es solo el primer comando 1)
+te ubicas en la ruta de la carpeta rickandmorty y ejecutar los siguientes comandos si se van a modificar el codigo
+2) git add .
+3) git commit -m "Initial commit Andres Patino"
+4) git push origin DevelopAndres
